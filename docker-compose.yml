@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  n8n:
+    image: n8nio/n8n
+    ports:
+      - "5678:5678"
+    environment:
+      # Pastikan n8n berjalan di luar mode enkripsi (hanya untuk testing)
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      # Tambahkan variabel lingkungan lain yang mungkin Anda butuhkan
+      
