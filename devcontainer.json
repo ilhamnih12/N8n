@@ -1,0 +1,18 @@
+{
+  "name": "n8n Workflow Automation",
+  "image": "n8nio/n8n", // Menggunakan image Docker resmi n8n
+  "forwardPorts": [5678], // Port default n8n
+  "remoteUser": "node",
+  "postCreateCommand": "npm install", // Perintah opsional setelah kontainer dibuat
+  "appPort": 5678,
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // Setting VS Code
+      },
+      "extensions": [
+        "ms-vscode.live-server" // Ekstensi tambahan jika diperlukan
+      ]
+    }
+  }
+    }
